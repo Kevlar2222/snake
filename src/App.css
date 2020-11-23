@@ -26,6 +26,7 @@ time, mark, audio, video {
   body {
 	  background-image: url('./david-clode-QZePScKPb2Q-unsplash.jpg');
 	  z-index: -1;
+	  background-size: cover;
   }
 
 .gameBoard {
