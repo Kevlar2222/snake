@@ -23,6 +23,11 @@ time, mark, audio, video {
 	--GRID_SIZE:20;
   }
 
+  body {
+	  background-image: url('./david-clode-QZePScKPb2Q-unsplash.jpg');
+	  z-index: -1;
+  }
+
 .gameBoard {
 	display: grid;
 	grid-template-rows: repeat(var(--GRID_SIZE), 1fr);
@@ -33,6 +38,7 @@ time, mark, audio, video {
 	margin-top: 10vh;
 	position: relative;
 	border: 1px solid black;
+	background-color: white;
 }
 
 .snakeHead {
@@ -40,11 +46,22 @@ time, mark, audio, video {
 	height: calc(80vh / var(--GRID_SIZE));
 	width: calc(80vh / var(--GRID_SIZE));
 	background-color: red;
+	z-index: 1;
+}
+
+.snakeHead2 {
+	position: absolute;
+	height: calc(80vh / var(--GRID_SIZE));
+	width: calc(80vh / var(--GRID_SIZE));
+	background-color: grey;
+	z-index: 1;
 }
 
 .food {
 	position: absolute;
 	height: calc(80vh / var(--GRID_SIZE));
 	width: calc(80vh / var(--GRID_SIZE));
-	background-color: green;
+	background-image: url('./apple.jpeg');
+	background-size: cover;
+	z-index: 0;
 }
