@@ -27,6 +27,7 @@ time, mark, audio, video {
 	  background-image: url('./david-clode-QZePScKPb2Q-unsplash.jpg');
 	  z-index: -1;
 	  background-size: cover;
+	  font-family: "Big Shoulders Stencil Display";
   }
 
 .gameBoard {
@@ -65,4 +66,76 @@ time, mark, audio, video {
 	background-image: url('./apple.jpeg');
 	background-size: cover;
 	z-index: 0;
+}
+
+.options {
+	width: 80vh;
+	height: 80vh;
+	position: absolute;
+	z-index: 10;
+	background-color: white;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+}
+
+.container {
+	position: relative;
+	height: 80vh;
+	width: 80vh;
+	margin: auto;
+}
+
+.heading {
+	font-size: 8vh;
+	text-align: center;
+	font-weight: 500;
+	padding-bottom: 5vh;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.button {
+	background-color: lightgrey;
+	font-size: 5vh;
+	font-family: "Big Shoulders Stencil Display";
+	margin-bottom: 8vh;
+	cursor: pointer;
+	padding: 6px 18px;
+}
+
+.selected {
+	background-color: yellow;
+}
+
+.start {
+	margin-top: 5vh;
+	font-size: 7vh;
+	font-weight: 600;
+}
+
+.start:hover {
+	color: white;
+	background-color: green;
+}
+
+.scores {
+	position: fixed;
+	left: 10vh;
+	top: 10vh;
+	width: 200px;
+	font-size: 70px;
+	color: white;
+	text-align: center;
+	z-index: 10;
+	font-weight: 800;
+	margin-bottom: 4vh;
+}
+
+.pl {
+	font-weight: 600;
+	font-size: 50px;
 }
