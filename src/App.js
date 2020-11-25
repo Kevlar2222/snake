@@ -35,6 +35,7 @@ class App extends React.Component {
     this.instructions = this.instructions.bind(this);
     this.menu = this.menu.bind(this);
     this.playSplat = this.playSplat.bind(this);
+    this.toggleSound = this.toggleSound.bind(this);
   }
 
   componentDidMount() {
@@ -91,7 +92,7 @@ class App extends React.Component {
       this.move();
     }, ms);
     this.placeFood();
-    if(music){
+    if(this.state.music){
       const music = document.getElementById('music');
       music.play();
       music.loop = true;
@@ -99,11 +100,22 @@ class App extends React.Component {
   }
 
   playSplat() {
-    if(music){
+    if(this.state.music){
       const splat = document.getElementById('splat');
       splat.currentTime = 0;
       splat.play();
     }
+  }
+
+  toggleSound() {
+    const music = document.getElementById('music');
+    if(this.state.music){
+      music.pause();
+      music.currentTime = 0;
+    }
+    this.setState({
+      music: !this.state.music
+    });
   }
 
   move () {                                                           //move snake(s) one square, check for collisions, update page
@@ -199,7 +211,7 @@ class App extends React.Component {
       });
       if(xPos === xPos2 && yPos === yPos2){                         // Head on collision
         clearInterval(this.interval);
-        if(music){
+        if(this.state.music){
           const explosion = document.getElementById('explosion');
           explosion.currentTime = 0;
           explosion.play();
@@ -435,7 +447,7 @@ class App extends React.Component {
           <SnakeHead2 display={this.state.multi} style={this.state.headStyle2}/>
           <Food food={this.state.foodStyle}/>
         </div>
-        <Start toggle={this.toggle} click={this.startGame} instructions={this.instructions}/>
+        <Start toggle={this.toggle} click={this.startGame} instructions={this.instructions} music={this.state.music} toggleSound={this.toggleSound}/>
         <Score p1={this.state.p1} p2={this.state.p2} multi={this.state.multi}/>
         <Instructions menu={this.menu}/>
       </div>
@@ -485,6 +497,7 @@ function Start(props) {
       <button onClick={props.click} className="button start">Start</button>
     </div>
     <button className="instructionButton" onClick={props.instructions}>Instructions</button>
+    <Sound music={props.music} toggleSound={props.toggleSound}/>
   </div>
   );
 }
@@ -547,6 +560,18 @@ function Instructions(props) {
     </div>
     
   )
+}
+
+function Sound (props) {
+  if(props.music){
+    return(
+      <button className="musicOn" onClick={props.toggleSound}></button>
+    );
+  } else {
+    return (
+      <button className="musicOff" onClick={props.toggleSound}></button>
+    );
+  }
 }
 
 export default App;
