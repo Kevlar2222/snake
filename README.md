@@ -16,3 +16,7 @@ Eat food to grow, trap your opponent.
 Press p to restart with same settings and carry over score.
 
 Press q to change settings and reset the score.
+
+### Sounds
+
+Provided by Zapsplat.com

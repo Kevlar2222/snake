@@ -139,3 +139,37 @@ time, mark, audio, video {
 	font-weight: 600;
 	font-size: 50px;
 }
+
+.instructions {
+	position: fixed;
+	margin: auto;
+	width: calc(80vh - 12px);
+	height: calc(80vh - 12px);
+	top: 10vh;
+	z-index: 5;
+	background-color: brown;
+	color: white;
+	border: 1px solid black;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 6px;
+}
+
+.instructionButton {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: "Big Shoulders Stencil Display";
+	background-color: lightgray;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.bigger {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 4vh;
+	text-decoration: underline;
+}
