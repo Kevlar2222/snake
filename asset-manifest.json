@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/snake/static/css/main.1602e40c.chunk.css",
+    "main.css": "/snake/static/css/main.0884a7b5.chunk.css",
     "main.js": "/snake/static/js/main.559237ea.chunk.js",
     "main.js.map": "/snake/static/js/main.559237ea.chunk.js.map",
     "runtime-main.js": "/snake/static/js/runtime-main.de650979.js",
@@ -10,7 +10,7 @@
     "static/js/3.add21a60.chunk.js": "/snake/static/js/3.add21a60.chunk.js",
     "static/js/3.add21a60.chunk.js.map": "/snake/static/js/3.add21a60.chunk.js.map",
     "index.html": "/snake/index.html",
-    "static/css/main.1602e40c.chunk.css.map": "/snake/static/css/main.1602e40c.chunk.css.map",
+    "static/css/main.0884a7b5.chunk.css.map": "/snake/static/css/main.0884a7b5.chunk.css.map",
     "static/js/2.9353274b.chunk.js.LICENSE.txt": "/snake/static/js/2.9353274b.chunk.js.LICENSE.txt",
     "static/media/App.css": "/snake/static/media/soundOn.5a8f6758.jpg",
     "static/media/explosion.7fc51111.mp3": "/snake/static/media/explosion.7fc51111.mp3",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.de650979.js",
     "static/js/2.9353274b.chunk.js",
-    "static/css/main.1602e40c.chunk.css",
+    "static/css/main.0884a7b5.chunk.css",
     "static/js/main.559237ea.chunk.js"
   ]
 }
