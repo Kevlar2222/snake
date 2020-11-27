@@ -161,9 +161,11 @@ time, mark, audio, video {
 	bottom: 0;
 	right: 0;
 	font-family: "Big Shoulders Stencil Display";
-	background-color: lightgray;
+	background-color: green;
+	color: white;
 	font-size: 22px;
 	font-weight: 500;
+	cursor: pointer;
 }
 
 .bigger {
